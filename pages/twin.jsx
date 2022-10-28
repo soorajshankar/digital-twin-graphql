@@ -1,21 +1,11 @@
-import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import { useEffect } from "react";
+import Twin from "../components/Twin";
 import { start } from "../lib/twin";
 let started = false;
 
-const Home: NextPage = () => {
-  useEffect(() => {
-    if (!started) {
-      start();
-      started = true;
-    }
-
-    return () => {
-      // second
-    };
-  }, []);
+const Home = () => {
 
   return (
     <div className="">
@@ -26,7 +16,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <div id="info">
+        {/* <div id="info">
           <a
             href="https://threejs.org"
             target="_blank"
@@ -61,9 +51,9 @@ const Home: NextPage = () => {
             <br />
             Glass
           </span>
-        </div>
+        </div> */}
 
-        <div id="container"></div>
+        <Twin />
       </main>
 
       {/* <footer className={styles.footer}></footer> */}
