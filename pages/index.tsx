@@ -19,23 +19,11 @@ const Home: NextPage = () => {
 
         <p className={styles.description}>
           Built with Hasura, and ThreeJS{" "}
-          <code className={styles.code}>pages/index.tsx</code>
         </p>
 
         <div className={styles.grid}>
           <a href="/twin" className={styles.card}>
             <h2>Digital Twin &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
           </a>
         </div>
       </main>

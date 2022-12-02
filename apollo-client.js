@@ -9,6 +9,13 @@ const wsLink =
     ? new GraphQLWsLink(
         createClient({
           url: "ws://localhost:8080/v1/graphql",
+          connectionParams: async () => {
+            return {
+              headers: {
+                'x-hasura-admin-secret': 'randompassword',
+              },
+            };
+          },
         })
       )
     : null;
@@ -33,7 +40,6 @@ const splitLink =
     : httpLink;
 
 const client = new ApolloClient({
-  // uri: "https://countries.trevorblades.com",
   link: splitLink,
   cache: new InMemoryCache(),
 });

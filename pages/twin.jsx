@@ -6,7 +6,6 @@ import { start } from "../lib/twin";
 let started = false;
 
 const Home = () => {
-
   return (
     <div className="">
       <Head>
@@ -16,47 +15,8 @@ const Home = () => {
       </Head>
 
       <main>
-        {/* <div id="info">
-          <a
-            href="https://threejs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            three.js
-          </a>{" "}
-          car materials
-          <br />
-          Ferrari 458 Italia model by{" "}
-          <a
-            href="https://sketchfab.com/models/57bf6cc56931426e87494f554df1dab6"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            vicent091036
-          </a>
-          <br />
-          <br />
-          <span className="colorPicker">
-            <input id="body-color" type="color" value="#ff0000"></input>
-            <br />
-            Body
-          </span>
-          <span className="colorPicker">
-            <input id="details-color" type="color" value="#ffffff"></input>
-            <br />
-            Details
-          </span>
-          <span className="colorPicker">
-            <input id="glass-color" type="color" value="#ffffff"></input>
-            <br />
-            Glass
-          </span>
-        </div> */}
-
         <Twin />
       </main>
-
-      {/* <footer className={styles.footer}></footer> */}
     </div>
   );
 };
