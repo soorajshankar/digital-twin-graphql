@@ -1,6 +1,0 @@
-{
-  "HASURA_HOST": "http://localhost:8080",
-  "MQTT_HOST": "http://broker.mqttdashboard.com",
-  "MODE": "NORMAL",
-  "MQTT_CHANNEL": "digital_twin/android/#"
-}
