@@ -1,6 +1,12 @@
 ## Digital Twin Made with Android Device -> MQTT-> Hasura -> ReactJS + ThreeJS Dashboard
 
 
+## Demo
+
+https://user-images.githubusercontent.com/8408875/205365998-2c8a7e63-a906-4035-85ce-5a48796c4dc7.mov
+
+
+
 ## Pre Requisites 
 
 * A Hasura cloud project or a local Hasura GraphQL instance (Sign up on https://cloud.hasura.io/ to get a free Hasura project and PostgreSQL DB)
@@ -33,8 +39,7 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Setting Up the toy car 
 
-![](./public/assets/DEMO.mov)
+
 
 
