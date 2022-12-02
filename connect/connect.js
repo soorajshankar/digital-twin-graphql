@@ -1,13 +1,14 @@
 const mqtt = require("mqtt");
+require('dotenv').config()
 const { default: fetch } = require("node-fetch");
 
 const client = mqtt.connect("http://broker.mqttdashboard.com");
 
 const CONSTANTS = {
-  HASURA_HOST: "http://localhost:8080",
-  ADMIN_SECRET: "randompassword",
-  MQTT_HOST: "http://broker.mqttdashboard.com",
-  MQTT_CHANNEL: "digital_twin/android/#",
+  HASURA_HOST: process.env.HASURA_ADMIN_SECRET,
+  ADMIN_SECRET: process.env.HASURA_ADMIN_SECRET,
+  MQTT_HOST:  process.env.MQTT_HOST,
+  MQTT_CHANNEL: process.env.MQTT_CHANNEL,
 };
 
 const debug = true;
@@ -63,7 +64,7 @@ client.on("connect", function () {
   console.log(">>>");
   client.subscribe("digital_twin/android/#", function (err) {
     if (!err) {
-      client.publish("digital_twin/android/sssa", "Hello mqtt");
+      // client.publish("digital_twin/android/sssa", "Hello mqtt");
     }
   });
 });
