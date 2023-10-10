@@ -12,7 +12,7 @@ const wsLink =
           connectionParams: async () => {
             return {
               headers: {
-                'x-hasura-admin-secret': 'randompassword',
+                "x-hasura-admin-secret": "randompassword",
               },
             };
           },
@@ -21,7 +21,10 @@ const wsLink =
     : null;
 
 const httpLink = new HttpLink({
-  uri: `http://localhost:8080/v1/query`,
+  uri: `https://countries.trevorblades.com`,
+  headers: {
+    "x-hasura-admin-secret": "randompassword",
+  },
 });
 
 const splitLink =

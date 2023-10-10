@@ -17,13 +17,14 @@ const Home: NextPage = () => {
           Demo of <a href="https://nextjs.org">Digital Twin</a>
         </h1>
 
-        <p className={styles.description}>
-          Built with Hasura, and ThreeJS{" "}
-        </p>
+        <p className={styles.description}>Built with Hasura, and ThreeJS </p>
 
         <div className={styles.grid}>
           <a href="/twin" className={styles.card}>
             <h2>Digital Twin &rarr;</h2>
+          </a>{" "}
+          <a href="/query" className={styles.card}>
+            <h2>Try GQL Query;</h2>
           </a>
         </div>
       </main>
